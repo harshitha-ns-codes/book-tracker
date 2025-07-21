@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body { margin:0; font-family:'Roboto',sans-serif; background:#f0f4f8; }
+.container { max-width:900px; margin:2em auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+h1 { text-align:center; color:#333; }
+form { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.5em; margin-bottom:1em; }
+form input { padding:.6em; border:1px solid #ccc; border-radius:4px; }
+form button { grid-column:span 8; padding:.8em; background:#4f46e5; color:#fff; border:none; border-radius:25px; font-size:1.1em; cursor:pointer; transition:background-color .3s; }
+form button:hover { background:#6366f1; }
+table { width:100%; border-collapse:collapse; }
+th, td { text-align:left; padding:.7em; vertical-align:top; }
+thead th { border-bottom:2px solid #ddd; font-weight:600; }
+tbody tr { transition:background .3s; }
+tbody tr:hover { background:#f7f7f7; }
+.progress-bar { width:100%; background:#e5e7eb; border-radius:12px; overflow:hidden; height:16px; margin-top:.4em; }
+.progress-bar-inner { height:100%; background:#10b981; transition:width .5s ease; }
+.remove-btn { background:none; border:none; color:#e11d48; cursor:pointer; font-size:1.2em; }
+.remove-btn:hover { color:#be123c; }
+.timer-btn { margin:0 .2em; padding:.3em .6em; border-radius:4px; border:none; background:#ddd; cursor:pointer; }
+.timer-btn:disabled { background:#f3f3f3; cursor:not-allowed; }
+.timer-display { font-family:monospace; }
+.star-rating { display: inline-block; direction: rtl; font-size: 1.2em; }
+.star-rating input { display: none; }
+.star-rating label { color: #ddd; cursor: pointer; }
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #f5b301;
+}
+.description-input { width: 95%; padding: .3em; border: 1px solid #ccc; border-radius:4px; }
