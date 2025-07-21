@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 My Book Tracker</h1>
+    <form id="book-form">
+      <input id="title" placeholder="Title" required />
+      <input id="author" placeholder="Author" required />
+      <input id="total-pages" type="number" placeholder="Total Pages" required min="1" />
+      <input id="current-page" type="number" placeholder="Current Page" required min="0" />
+      <button type="submit">Add Book</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th><th>Author</th><th>Progress</th>
+          <th>Timer</th><th>Estimate</th><th>Rating</th><th>Description</th><th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="book-list"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
